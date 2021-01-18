@@ -1,0 +1,570 @@
+.cloudflareTitle:before {
+    content: "\f137";
+    font-family: 'dashicons';
+    font-size: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+form.authForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.authForm input[type="password"], .authForm input[type="text"] {
+    width: 30%;
+    border: 1px solid;
+    border-radius: 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.authForm button {
+    margin-left: 24.64%;
+    border: 1px solid;
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 5px 15px;
+    background: #21759b;
+    color: white;
+    transition: all 0.2s;
+}
+
+.authForm button:hover {
+    border: 1.025px solid;
+    background: #15678c;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.newzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+a.addnewzonetoggle {
+    padding: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #4e4e4e;
+    text-decoration: none;
+    background: #dadada;
+    transition: 0.2s all;
+}
+
+a.addnewzonetoggle:hover {
+    background: #bdbdbd;
+    color: #2d2d2d;
+}
+
+.nzcontainer {
+    margin: 25px 0;
+}
+
+form.newzoneform {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.zoneid {
+    width: 80%;
+}
+
+.zoneid input {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 0;
+}
+
+.nzsubmit {
+    width: 20%;
+}
+
+.nzsubmit button {
+    width: 100%;
+    height: 100%;
+    background: #21759b;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+h3.nztitle {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.newzone span {
+    margin-bottom: 30px;
+}
+
+.recordsHeader {
+    display: flex;
+    align-items: center;
+}
+
+.recordsHeader h3 {  
+    float:left;
+    margin: 0; 
+}
+
+.recordsHeader p {
+    margin: 0;
+}
+
+.recordsFilter {
+    display: flex;
+}
+
+.recordsFilter a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    background: #e0e0e0;
+    padding: 5px 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+}
+
+.addNewHeader {
+    display: flex;
+    align-items: center;
+}
+
+h3.addNew {
+    float: left;
+    margin-right: 10px;
+}
+
+.addnewToggle {
+    background: #21759b;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.showRecords {
+    color: #21759b;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 3px;
+    transform: rotate(0deg);
+}
+
+.showRecords.active {
+    align-self: center;
+    transform: rotate(180deg);
+    transition: 100ms all;
+}
+
+form.addNewForm {
+    clear: both;
+    margin: 0 auto;
+}
+
+.add-new-form {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form.recordEditForm {
+    padding: 30px;
+}
+
+.resultsContainer {
+    display: none;
+}
+
+.resultsContainer.show {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.saveRecord, .editRecord {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dnsItem {
+    background: white;
+    margin-bottom: 1px;
+    padding: 0px 10px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.dnsHead {
+    width: 100%;
+}
+
+.type {
+    width: 10% !important;
+}
+
+.dnsHead div {
+    width: 40%;
+    float: left;
+}
+
+.type p {
+    float: left;
+    margin: 16px 0;
+    border: 1px solid #21759b;
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+
+.dnsItem h3 {
+    align-self: center;
+}
+
+.dnsContent {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.dnsContent.show{
+    display: flex;
+    transition: ease-in-out 200ms;
+}
+
+.dnsContent span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dnsContent p {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.dnsActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 15px;
+    float: right !important;
+}
+
+.dnsActions a {
+    font-size: 20px;    
+    justify-items: center;
+    margin-left: 5px;
+}
+
+a.showContent {
+    align-self: center;
+    transform: rotate(0deg);
+    transition: 100ms all;
+}
+
+a.showContent.active {
+    align-self: center;
+    transform: rotate(180deg);
+    transition: 100ms all;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    overflow: auto;
+}
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {opacity:0} 
+    to {opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {opacity:0} 
+    to {opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #21759b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .modal-header h2 {
+     color: white;
+ }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #21759b;
+    color: white;
+    height: 20px;
+    display: flex;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 160px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width:600px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.2s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    overflow: auto;
+    left: -85px;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.saveRecord button, .editRecord button {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border: 0;
+    background: #21759b;
+    color: white;
+    border-radius: 5px;
+}
+
+div#cnametooltip {
+    position: fixed;
+    right: 310px;
+    margin-top: 50px;
+    background: white;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#cnametooltip span {
+    font-weight: bold;
+}
+
+.lds-dual-ring {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .resultsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dnsContent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dnsItem {
+        width: 95%;
+    }
+
+    .modal-body {
+        padding: 60px 16px;
+    }
+
+    .modal-header {
+        padding: 2px 16px;
+        background-color: #21759b;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        width: 96%;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0px;
+        border: 1px solid #888;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.2s;
+        animation-name: animatetop;
+        animation-duration: 0.2s;
+        display: flex;
+        flex-direction: column;
+        max-height: 75%;
+        overflow: auto;
+        left: -1px;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .first input[type=checkbox] {
+        float: right;
+    }
+
+    .fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newfield {
+        width: 100%;
+    }
+
+    .newfield .head {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .newfield input {
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .newfield textarea {
+        width: 100%;
+        height: 130px;
+        font-size: 30px;
+    }
+
+
+}
